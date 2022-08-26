@@ -1,0 +1,167 @@
+.nickNameBox {
+  position: relative;
+  top: 35vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #10678a;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 15px 0px rgba(1, 1, 1, 0.5);
+  color: white;
+
+  .contentBox {
+    width: 300px;
+    height: 80px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 45%;
+        margin: 5px 0;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+      }
+    }
+
+  }
+}
+
+.title {
+  width: 80%;
+  text-align: center;
+  background-color: #10678a87;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+  margin: 10vh auto 0;
+  color: white;
+  font-size: 20px;
+  min-width: 800px;
+  max-width: 1250px;
+  position: relative;
+
+  .callingBtn {
+    position: absolute;
+    top: 20px;
+    min-width: 250px;
+    max-width: 15vw;
+
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.webBox {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  background-color: #10678a87;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  min-width: 800px;
+  max-width: 1250px;
+
+  .memberBox {
+    width: 20vw;
+    min-width: 200px;
+
+    .selfItem {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(37, 58, 76, 0.8);
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      height: 30px;
+      margin: 5px
+    }
+
+    .mGroup {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(66, 90, 112, 0.8);
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      height: 30px;
+      margin: 5px
+    }
+  }
+
+  .chatBox {
+    width: 100%;
+    border-left: 1px solid #10678a59;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    min-width: 570px;
+
+    .inputBox {
+      height: 35px;
+      display: grid;
+      grid-template-columns: 85% 15%;
+
+    }
+
+    .messageGroup {
+      height: calc(100% - 35px);
+      overflow: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px;
+
+      .selfMessage {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+      }
+
+      .remoteMessage {
+        display: flex;
+        width: 60vw;
+        text-align: start;
+      }
+
+    }
+  }
+
+  .privateChatBox {
+    min-width: 200px;
+    max-width: 18vw;
+
+    .self {
+      width: 100%;
+      height: 45%;
+
+      video {
+        width: 100%;
+        object-fit: fill;
+        max-height: 80%;
+      }
+    }
+
+    .remote {
+      width: 100%;
+      height: 45%;
+
+      video {
+        width: 100%;
+        object-fit: fill;
+        max-height: 80%;
+      }
+    }
+  }
+}
